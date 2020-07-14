@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
 
     //Loads specified scene when called. String is Scene Name.
-    public void loadScene(string scene)
+    public void LoadScene(string scene)
     {
         if (scene != "")
         {
