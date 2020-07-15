@@ -24,7 +24,7 @@ public class DebugMenu : MonoBehaviour
             }
             else
             {
-                hideDebug();
+                HideDebug();
             }
         }
     }
@@ -35,7 +35,7 @@ public class DebugMenu : MonoBehaviour
         debugMenu.SetActive(true);
     }
 
-    void hideDebug()
+    void HideDebug()
     {
         isActive = !isActive;
         debugMenu.SetActive(false);

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField]
     bool isPaused;
     public GameObject PauseUI;
 
@@ -27,23 +28,24 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        if (Time.timeScale == 1)
-        {
+
             Time.timeScale = 0;
+
             isPaused = !isPaused;
             PauseUI.SetActive(true);
             DefaultPauseState();
-        }
+            Debug.Log("Game Paused");
+        
     }
 
     public void ResumeGame()
     {
-        if (Time.timeScale == 0)
-        {
+
             Time.timeScale = 1;
             isPaused = !isPaused;
             PauseUI.SetActive(false);
-        }
+            Debug.Log("Game Resumed");
+        
     }
 
     void DefaultPauseState()
