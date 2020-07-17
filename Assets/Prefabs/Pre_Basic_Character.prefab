@@ -148,7 +148,7 @@ MonoBehaviour:
   jump: 119
   speed: 2
   maxSpeed: 5
-  jumpForce: 1
+  jumpForce: 5
   jumpCoolDown: 0.1
   jumpCoolDownConstant: 0.1
   stopForce: 2

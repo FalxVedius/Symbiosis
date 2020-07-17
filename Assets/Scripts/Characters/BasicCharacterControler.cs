@@ -9,12 +9,16 @@ public class BasicCharacterControler : MonoBehaviour
     [SerializeField] Rigidbody2D RB2D;
 
     bool isGrounded = true;
+    bool isActive = false;
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
+        if (isActive == true)
+        {
+            Move();
+            Jump();
+        }
     }
 
     public void Move()
@@ -67,5 +71,10 @@ public class BasicCharacterControler : MonoBehaviour
                 isGrounded = true;
             }
         }
+    }
+
+    public void SetIsActive(bool set)
+    {
+        isActive = set;
     }
 }
