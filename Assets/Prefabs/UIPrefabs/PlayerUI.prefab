@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 2989639069242973935}
   - component: {fileID: 2989639069242973934}
   m_Layer: 0
-  m_Name: Slider
+  m_Name: BackgroundSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3286,6 +3286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10219ff58e52282458355ee14a717a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
   PauseUI: {fileID: 2989639069598037805}
 --- !u!114 &1993875992710304639
 MonoBehaviour:
