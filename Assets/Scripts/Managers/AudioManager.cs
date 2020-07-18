@@ -10,11 +10,14 @@ public class Sound
     //public Variables
     public AudioMixerGroup audioMixerGroup;
     public string clipName;
-    public AudioClip clip;
+    public AudioClip clip; 
+
     [Range(0.0f, 1.0f)]
     public float volume;
+
     [Range(0.0f, 2.0f)]
     public float pitch;
+
     public bool loop = false;
     public bool playOnAwake = false;
 
