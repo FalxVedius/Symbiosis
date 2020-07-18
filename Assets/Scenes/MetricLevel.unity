@@ -438,6 +438,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2989639069137398369, guid: 7e91e64f56e642a4aaf698f5805e74d3,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989639069137398369, guid: 7e91e64f56e642a4aaf698f5805e74d3,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2989639069137398375, guid: 7e91e64f56e642a4aaf698f5805e74d3,
         type: 3}
       propertyPath: m_LocalPosition.z
