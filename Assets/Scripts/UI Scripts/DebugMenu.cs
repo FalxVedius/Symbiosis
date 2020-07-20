@@ -28,17 +28,23 @@ public class DebugMenu : MonoBehaviour
             }
         }
     }
+
     #region Private Functions
     void ShowDebug()
     {
+ #if UNITY_EDITOR
+ 
         isActive = !isActive;
         debugMenu.SetActive(true);
+#endif
     }
 
     void HideDebug()
     {
+#if UNITY_EDITOR
         isActive = !isActive;
         debugMenu.SetActive(false);
+#endif
     }
     #endregion
 
@@ -54,6 +60,11 @@ public class DebugMenu : MonoBehaviour
         string scene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(scene);
         Debug.Log("Reloading " + scene);
+    }
+
+    public void PlayButtonClickSound()
+    {
+        AudioManager.instance.PlaySound("TestSound");
     }
     #endregion
 }

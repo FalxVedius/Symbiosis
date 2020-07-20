@@ -40,7 +40,6 @@ public class AudioSlider : MonoBehaviour
             else if (this.gameObject.name == "SFXSlider")
             {
                 slider.value = audioManager.GetSFXVolume();
-                Debug.Log("SFX Slider vold Assigned");
             }
             else
             {
@@ -65,5 +64,10 @@ public class AudioSlider : MonoBehaviour
     {
         //Sets SFX Volume Level
         audioManager.SetSFXVolume(sfxVol);
+    }
+
+    public void PlayTestSound()
+    {
+        audioManager.PlaySound("TestSound");
     }
 }

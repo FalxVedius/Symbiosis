@@ -44,4 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 268ddf8100d228041b99b9795ffe3e9e, type: 2}
-  sounds: []
+  sounds:
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: TestSound
+    clip: {fileID: 8300000, guid: 6caa1738593b1d240a70d9a44bd50dd1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
