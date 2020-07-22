@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    private void Start()
+    {
+        AudioManager.instance.PlaySound("Music_MainMenu");
+    }
+
     //Loads specified scene when called. String is Scene Name.
     public void LoadScene(string scene)
     {
@@ -33,6 +38,11 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButtonClickSound()
     {
-        AudioManager.instance.PlaySound("TestSound");
+        AudioManager.instance.PlaySound("Menu_Click");
+    }
+
+    public void PlayButtonHoverSound()
+    {
+        AudioManager.instance.PlaySound("Menu_Hover");
     }
 }
