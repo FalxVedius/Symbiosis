@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -4060869778783450390
     second: Spr_CharacterSheet_Jebsee_Arm2
+  - first:
+      213: 9082924425868951959
+    second: Spr_CharacterSheet_Jebsee_Hand
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -213,9 +216,9 @@ TextureImporter:
       name: Spr_CharacterSheet_Jebsee_Arm2
       rect:
         serializedVersion: 2
-        x: 599
-        y: 20
-        width: 256
+        x: 598
+        y: 19
+        width: 131
         height: 69
       alignment: 9
       pivot: {x: 0.06345987, y: 0.5893585}
@@ -226,6 +229,27 @@ TextureImporter:
       bones: []
       spriteID: aea4e7c9374e4a7c0800000000000000
       internalID: -4060869778783450390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Hand
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 21
+        width: 127
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79143a554a70d0e70800000000000000
+      internalID: 9082924425868951959
       vertices: []
       indices: 
       edges: []

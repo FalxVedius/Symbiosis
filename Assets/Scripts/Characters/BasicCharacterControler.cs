@@ -7,7 +7,9 @@ public class BasicCharacterControler : MonoBehaviour
     [SerializeField] KeyCode left, right, jump;
     [SerializeField] float speed, maxSpeed, jumpForce, jumpCoolDown, jumpCoolDownConstant, stopForce;
     [SerializeField] Rigidbody2D RB2D;
+    [SerializeField] Animator Anim;
 
+    bool facingRight = true;
     bool isGrounded = true;
     bool isActive = false;
 
@@ -32,6 +34,11 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Left
                 RB2D.velocity = new Vector2(RB2D.velocity.x - speed, RB2D.velocity.y);
             }
+            if (facingRight == true)
+            {
+                Anim.SetTrigger("Flip");
+                facingRight = false;
+            }
         }
 
         //Going right
@@ -42,6 +49,11 @@ public class BasicCharacterControler : MonoBehaviour
             {
                 //Add force Right
                 RB2D.velocity = new Vector2(RB2D.velocity.x + speed, RB2D.velocity.y);
+            }
+            if (facingRight == false)
+            {
+                Anim.SetTrigger("Flip");
+                facingRight = true;
             }
         }
 

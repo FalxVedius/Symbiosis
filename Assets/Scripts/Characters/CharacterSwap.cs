@@ -17,6 +17,7 @@ public class CharacterSwap : MonoBehaviour
         {
             index++;
             SwitchCharacter(index);
+            Debug.Log("Index = " + index);
         }
 
         if (Input.GetKeyDown(back))
@@ -26,14 +27,14 @@ public class CharacterSwap : MonoBehaviour
         }
     }
 
-    public void SwitchCharacter(int index)
+    public void SwitchCharacter(int indx)
     {
         //put index back into the array if needed
-        if (index >= allCharacters.Length)
+        if (indx >= allCharacters.Length)
         {
             index = 0;
         }
-        else if (index < 0)
+        else if (indx < 0)
         {
             index = allCharacters.Length - 1;
         }
