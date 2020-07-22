@@ -47,6 +47,15 @@ public class PauseMenu : MonoBehaviour
             Debug.Log("Game Resumed");
         
     }
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
+    public void PlayButtonClickSound()
+    {
+        AudioManager.instance.PlaySound("TestSound");
+    }
 
     void DefaultPauseState()
     {
@@ -58,8 +67,4 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void LoadScene(string scene)
-    {
-        SceneManager.LoadScene(scene);
-    }
 }

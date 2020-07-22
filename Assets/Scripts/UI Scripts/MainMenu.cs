@@ -30,4 +30,9 @@ public class MainMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
+
+    public void PlayButtonClickSound()
+    {
+        AudioManager.instance.PlaySound("TestSound");
+    }
 }
