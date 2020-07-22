@@ -78,6 +78,7 @@ MonoBehaviour:
   jumpCoolDownConstant: 0.1
   stopForce: 2
   RB2D: {fileID: 1154619890037021672}
+  Anim: {fileID: 7129979756045224983}
 --- !u!60 &5679781285607527153
 PolygonCollider2D:
   m_ObjectHideFlags: 0

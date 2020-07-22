@@ -34,10 +34,11 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Left
                 RB2D.velocity = new Vector2(RB2D.velocity.x - speed, RB2D.velocity.y);
             }
-            if (facingRight == true)
+            if (facingRight == true && Anim != null)
             {
-                Anim.SetTrigger("Flip");
                 facingRight = false;
+                Anim.SetBool("IsRight",facingRight);
+                
             }
         }
 
@@ -50,10 +51,10 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Right
                 RB2D.velocity = new Vector2(RB2D.velocity.x + speed, RB2D.velocity.y);
             }
-            if (facingRight == false)
+            if (facingRight == false && Anim != null)
             {
-                Anim.SetTrigger("Flip");
                 facingRight = true;
+                Anim.SetBool("IsRight", facingRight);
             }
         }
 

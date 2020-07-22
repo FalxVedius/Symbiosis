@@ -6,10 +6,19 @@ public class CharacterSwap : MonoBehaviour
 {
     [SerializeField] Camera mainCamera;
     [SerializeField] BasicCharacterControler[] allCharacters;
-    int index;
+    int index = 0;
     [SerializeField] KeyCode foward, back;
-    
 
+    private void Start()
+    {
+        //Set all characters to false
+        for (int i = 0; i < allCharacters.Length; i++)
+        {
+            allCharacters[i].SetIsActive(false);
+        }
+        //Set active character on
+        allCharacters[0].SetIsActive(true);
+    }
     private void Update()
     {
         // Looking for input
