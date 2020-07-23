@@ -1,0 +1,272 @@
+fileFormatVersion: 2
+guid: acc0b8635fa4fe741b05881d31aac10a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1731590595849903444
+    second: Spr_CharacterSheet_Jebsee_Body
+  - first:
+      213: 6815926914337996639
+    second: Spr_CharacterSheet_Jebsee_Leg1
+  - first:
+      213: 1462207265965325092
+    second: Spr_CharacterSheet_Jebsee_Leg2
+  - first:
+      213: -3757170895020920475
+    second: Spr_CharacterSheet_Jebsee_Foot
+  - first:
+      213: 2200853722458231465
+    second: Spr_CharacterSheet_Jebsee_Arm1
+  - first:
+      213: -4060869778783450390
+    second: Spr_CharacterSheet_Jebsee_Arm2
+  - first:
+      213: 9082924425868951959
+    second: Spr_CharacterSheet_Jebsee_Hand
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Body
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 288
+        width: 692
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d5a0af878d70810800000000000000
+      internalID: 1731590595849903444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Leg1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 209
+        height: 266
+      alignment: 9
+      pivot: {x: 0.34143087, y: 0.8969496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ff3209a69079e50800000000000000
+      internalID: 6815926914337996639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Leg2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 148
+        width: 172
+        height: 104
+      alignment: 9
+      pivot: {x: 0.75093186, y: 0.80384105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bbbd3e2cdca4410800000000000000
+      internalID: 1462207265965325092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Foot
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 19
+        width: 202
+        height: 49
+      alignment: 9
+      pivot: {x: 0.08411672, y: 0.5314572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56177d13af8dbdbc0800000000000000
+      internalID: -3757170895020920475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Arm1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 29
+        width: 123
+        height: 243
+      alignment: 9
+      pivot: {x: 0.19296563, y: 0.87425894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a218b9ccc00b8e10800000000000000
+      internalID: 2200853722458231465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Arm2
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 19
+        width: 131
+        height: 69
+      alignment: 9
+      pivot: {x: 0.06345987, y: 0.5893585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea4e7c9374e4a7c0800000000000000
+      internalID: -4060869778783450390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spr_CharacterSheet_Jebsee_Hand
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 21
+        width: 127
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79143a554a70d0e70800000000000000
+      internalID: 9082924425868951959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d66ed95c91194754fa912d9903a0f607
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
