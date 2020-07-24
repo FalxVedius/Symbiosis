@@ -10,9 +10,4 @@ public class PlayerUI : MonoBehaviour
         AudioManager.instance.PlaySound("Music_Gameplay");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
