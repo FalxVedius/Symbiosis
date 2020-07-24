@@ -115,7 +115,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: e27a90b4b8c1215449af4c18e5577d01, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     playOnAwake: 0
   - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
       type: 2}
@@ -204,7 +204,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
-    playOnAwake: 0
+    playOnAwake: 1
   - audioMixerGroup: {fileID: -6306269621513331565, guid: 268ddf8100d228041b99b9795ffe3e9e,
       type: 2}
     clipName: Music_PauseMenu
