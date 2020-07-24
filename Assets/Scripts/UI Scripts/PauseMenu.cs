@@ -28,14 +28,13 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-
             Time.timeScale = 0;
-
             isPaused = !isPaused;
+        AudioManager.instance.PauseSound("Music_Gameplay");
+        AudioManager.instance.PlaySound("Music_PauseMenu");
             PauseUI.SetActive(true);
             DefaultPauseState();
             Debug.Log("Game Paused");
-        
     }
 
     public void ResumeGame()
@@ -43,18 +42,27 @@ public class PauseMenu : MonoBehaviour
 
             Time.timeScale = 1;
             isPaused = !isPaused;
+        AudioManager.instance.StopSound("Music_PauseMenu");
+        AudioManager.instance.ResumeSound("Music_Gameplay");
             PauseUI.SetActive(false);
             Debug.Log("Game Resumed");
         
     }
     public void LoadScene(string scene)
     {
+        AudioManager.instance.StopSound("Music_PauseMenu");
         SceneManager.LoadScene(scene);
     }
 
     public void PlayButtonClickSound()
     {
-        AudioManager.instance.PlaySound("TestSound");
+        AudioManager.instance.PlaySound("Menu_Click");
+    }
+
+    //Plays sound when cursour is over Button
+    public void PlayButtonHoverSound()
+    {
+        AudioManager.instance.PlaySound("Menu_Hover");
     }
 
     void DefaultPauseState()

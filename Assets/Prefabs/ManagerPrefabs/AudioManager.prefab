@@ -57,7 +57,7 @@ MonoBehaviour:
       type: 2}
     clipName: Menu_Hover
     clip: {fileID: 8300000, guid: edbdb17cf7e55b24e875b2dc652cdee2, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     playOnAwake: 0

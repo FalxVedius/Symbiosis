@@ -185,7 +185,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &613480755
 GameObject:
@@ -374,6 +374,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1376508077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2989639069973118835, guid: 7e91e64f56e642a4aaf698f5805e74d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2989639069052687717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1376508081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376508077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383a80421a8b7ca418a28d6d949e3014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2687314138838052441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +399,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
+        type: 3}
+      propertyPath: sounds.Array.data[19].playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2687314139618672477, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
         type: 3}
       propertyPath: m_Name
@@ -424,7 +447,7 @@ PrefabInstance:
     - target: {fileID: 2687314139618672479, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2687314139618672479, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
         type: 3}

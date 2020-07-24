@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     {
         if (scene != "")
         {
+            AudioManager.instance.StopSound("Music_MainMenu");
             SceneManager.LoadScene(scene);
            Debug.Log("Loading " + scene);
         }
@@ -36,11 +37,13 @@ public class MainMenu : MonoBehaviour
 #endif
     }
 
+    //Plays sound when Button is clicked
     public void PlayButtonClickSound()
     {
         AudioManager.instance.PlaySound("Menu_Click");
     }
 
+    //Plays sound when cursour is over Button
     public void PlayButtonHoverSound()
     {
         AudioManager.instance.PlaySound("Menu_Hover");
