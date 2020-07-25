@@ -47,9 +47,169 @@ MonoBehaviour:
   sounds:
   - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
       type: 2}
-    clipName: TestSound
-    clip: {fileID: 8300000, guid: 6caa1738593b1d240a70d9a44bd50dd1, type: 3}
+    clipName: Menu_Click
+    clip: {fileID: 8300000, guid: 587e81721905a0b43be10890276773d4, type: 3}
     volume: 1
     pitch: 1
     loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Menu_Hover
+    clip: {fileID: 8300000, guid: edbdb17cf7e55b24e875b2dc652cdee2, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Indi_WalkCycle
+    clip: {fileID: 8300000, guid: 92609521764b6ed43b6314f158e47267, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Indi_Jump
+    clip: {fileID: 8300000, guid: 6ffb568d129be984eb2f0877eae9e320, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Indi_Land
+    clip: {fileID: 8300000, guid: f6291c96813afe740a1d809493aa47e3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Indi_HookFire
+    clip: {fileID: 8300000, guid: 53bdf8684c80537489675fd6fabb7790, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Indi_HookLoop
+    clip: {fileID: 8300000, guid: 784aac7287250b840a8a127dacf80aa1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Indi_HookDetatch
+    clip: {fileID: 8300000, guid: 9227b1f8a52a4114a872b355c896a0c7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Jebsee_WalkCycle
+    clip: {fileID: 8300000, guid: e27a90b4b8c1215449af4c18e5577d01, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Jebsee_Jump
+    clip: {fileID: 8300000, guid: 51eea36808368304194a9b3d8ad989be, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Jebsee_Landing
+    clip: {fileID: 8300000, guid: f89f6b33b30b04c46a5bfb29f3ae64b4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Jebsee_ChargeLoop
+    clip: {fileID: 8300000, guid: 603d0f4d3843f584fbbc0430ee584bdf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Jebsee_ChargeImpact
+    clip: {fileID: 8300000, guid: 1ed912aa40a956447b706f9e478782e0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Obj_CrateSlide
+    clip: {fileID: 8300000, guid: 8619df1909c0e174dbbf1869aaea93ac, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Obj_CrateLand
+    clip: {fileID: 8300000, guid: b2dc7df876fdff248a8feb9559428856, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Obj_WallBreak
+    clip: {fileID: 8300000, guid: 31345bc160f4e3343877469d59e572c8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Obj_LeverActivate
+    clip: {fileID: 8300000, guid: e9475cda937a38d43a442188d3754748, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -6306269621513331565, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Obj_Exit
+    clip: {fileID: 8300000, guid: 6cbd293120501d2448178cae92d480f7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -6306269621513331565, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Music_MainMenu
+    clip: {fileID: 8300000, guid: 78e60bdd14214d143875d3ca7575491d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+  - audioMixerGroup: {fileID: -6306269621513331565, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Music_Gameplay
+    clip: {fileID: 8300000, guid: 06f8f402454778a44900190da4859b9d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+  - audioMixerGroup: {fileID: -6306269621513331565, guid: 268ddf8100d228041b99b9795ffe3e9e,
+      type: 2}
+    clipName: Music_PauseMenu
+    clip: {fileID: 8300000, guid: dc4c1bc8c71e2254ebd30a74b71e43a8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     playOnAwake: 0

@@ -1453,6 +1453,7 @@ GameObject:
   - component: {fileID: 1082917965}
   - component: {fileID: 1082917964}
   - component: {fileID: 1082917963}
+  - component: {fileID: 1082917966}
   m_Layer: 5
   m_Name: YesButton
   m_TagString: Untagged
@@ -1582,6 +1583,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082917961}
   m_CullTransparentMesh: 0
+--- !u!114 &1082917966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082917961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1116151014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1697,7 @@ GameObject:
   - component: {fileID: 1151553750}
   - component: {fileID: 1151553749}
   - component: {fileID: 1151553748}
+  - component: {fileID: 1151553751}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -1797,6 +1827,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151553746}
   m_CullTransparentMesh: 0
+--- !u!114 &1151553751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151553746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1152168166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1804,582 +1862,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.size
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[0].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[0].clipName
-      value: Menu_Click
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 587e81721905a0b43be10890276773d4, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[1].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[1].clipName
-      value: Menu_Hover
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: edbdb17cf7e55b24e875b2dc652cdee2, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[1].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[1].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[2].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[2].clipName
-      value: Indi_WalkCycle
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 92609521764b6ed43b6314f158e47267, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[2].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[2].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[3].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[3].clipName
-      value: Indi_Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6ffb568d129be984eb2f0877eae9e320, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[3].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[3].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[4].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[4].clipName
-      value: Indi_Land
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[4].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: f6291c96813afe740a1d809493aa47e3, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[4].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[4].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[5].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[5].clipName
-      value: Indi_HookFire
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 53bdf8684c80537489675fd6fabb7790, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[5].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[5].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[6].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[6].clipName
-      value: Indi_HookLoop
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 784aac7287250b840a8a127dacf80aa1, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[6].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[6].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[7].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[7].clipName
-      value: Indi_HookDetatch
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[7].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9227b1f8a52a4114a872b355c896a0c7, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[7].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[7].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[8].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[8].clipName
-      value: Jebsee_WalkCycle
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[8].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e27a90b4b8c1215449af4c18e5577d01, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[8].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[8].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[9].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[9].clipName
-      value: Jebsee_Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[9].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 51eea36808368304194a9b3d8ad989be, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[9].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[9].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[10].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[10].clipName
-      value: Jebsee_Landing
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[10].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: f89f6b33b30b04c46a5bfb29f3ae64b4, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[10].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[10].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[11].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[11].clipName
-      value: Jebsee_ChargeLoop
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[11].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 603d0f4d3843f584fbbc0430ee584bdf, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[11].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[11].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[12].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[12].clipName
-      value: Jebsee_ChargeImpact
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[12].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1ed912aa40a956447b706f9e478782e0, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[12].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[12].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[13].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[13].clipName
-      value: Obj_CrateSlide
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[13].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8619df1909c0e174dbbf1869aaea93ac, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[13].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[13].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[14].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[14].clipName
-      value: Obj_CrateLand
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[14].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: b2dc7df876fdff248a8feb9559428856, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[14].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[14].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[15].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[15].clipName
-      value: Obj_WallBreak
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[15].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 31345bc160f4e3343877469d59e572c8, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[15].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[15].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[16].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[16].clipName
-      value: Obj_LeverActivate
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[16].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e9475cda937a38d43a442188d3754748, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[16].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[16].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[17].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[17].clipName
-      value: Obj_Exit
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[17].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6cbd293120501d2448178cae92d480f7, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[17].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[17].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[18].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[18].clipName
-      value: Music_MainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[18].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 78e60bdd14214d143875d3ca7575491d, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[18].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[18].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[19].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[19].clipName
-      value: Music_Gameplay
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[19].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 06f8f402454778a44900190da4859b9d, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[19].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[19].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[20].audioMixerGroup
-      value: 
-      objectReference: {fileID: -71593900677069650, guid: 268ddf8100d228041b99b9795ffe3e9e,
-        type: 2}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[20].clipName
-      value: Music_PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[20].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: dc4c1bc8c71e2254ebd30a74b71e43a8, type: 3}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[20].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[20].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[2].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[11].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[6].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[13].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[20].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[19].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687314139618672476, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
-        type: 3}
-      propertyPath: sounds.Array.data[18].loop
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2687314139618672477, guid: a4dd65fb9040c5e44b99dd0dd892aa6a,
         type: 3}
       propertyPath: m_Name
@@ -2606,6 +2088,7 @@ GameObject:
   - component: {fileID: 1183641444}
   - component: {fileID: 1183641443}
   - component: {fileID: 1183641442}
+  - component: {fileID: 1183641445}
   m_Layer: 5
   m_Name: OptionButton
   m_TagString: Untagged
@@ -2746,6 +2229,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183641440}
   m_CullTransparentMesh: 0
+--- !u!114 &1183641445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183641440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1192694176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,6 +2789,7 @@ GameObject:
   - component: {fileID: 1575453695}
   - component: {fileID: 1575453694}
   - component: {fileID: 1575453693}
+  - component: {fileID: 1575453696}
   m_Layer: 5
   m_Name: ControlMenuButton
   m_TagString: Untagged
@@ -3418,6 +2930,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575453691}
   m_CullTransparentMesh: 0
+--- !u!114 &1575453696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575453691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1589030883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,6 +3205,7 @@ GameObject:
   - component: {fileID: 1764345656}
   - component: {fileID: 1764345655}
   - component: {fileID: 1764345654}
+  - component: {fileID: 1764345657}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -3805,6 +3346,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764345652}
   m_CullTransparentMesh: 0
+--- !u!114 &1764345657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764345652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1862714694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,6 +3515,7 @@ GameObject:
   - component: {fileID: 1979401061}
   - component: {fileID: 1979401060}
   - component: {fileID: 1979401059}
+  - component: {fileID: 1979401062}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -4086,6 +3656,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979401057}
   m_CullTransparentMesh: 0
+--- !u!114 &1979401062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979401057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2076340219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,6 +3732,7 @@ GameObject:
   - component: {fileID: 2084932581}
   - component: {fileID: 2084932580}
   - component: {fileID: 2084932579}
+  - component: {fileID: 2084932582}
   m_Layer: 5
   m_Name: NoButton
   m_TagString: Untagged
@@ -4274,6 +3873,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084932577}
   m_CullTransparentMesh: 0
+--- !u!114 &2084932582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084932577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2094787687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,6 +3991,7 @@ GameObject:
   - component: {fileID: 2105230442}
   - component: {fileID: 2105230441}
   - component: {fileID: 2105230440}
+  - component: {fileID: 2105230443}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -4504,3 +4132,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105230438}
   m_CullTransparentMesh: 0
+--- !u!114 &2105230443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105230438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1977336185}
+          m_MethodName: PlayButtonHoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
