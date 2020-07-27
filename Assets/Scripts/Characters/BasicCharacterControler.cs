@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicCharacterControler : MonoBehaviour
 {
-    [SerializeField] KeyCode left, right, jump;
+    public KeyCode left, right, jump;
     [SerializeField] float speed, maxSpeed, jumpForce, jumpCoolDown, jumpCoolDownConstant, stopForce;
     [SerializeField] Rigidbody2D RB2D;
     [SerializeField] Animator Anim;
@@ -12,7 +12,7 @@ public class BasicCharacterControler : MonoBehaviour
 
     bool facingRight = true;
     bool isGrounded = true;
-    bool isActive = false;
+   public bool isActive = false;
     bool isWalking = false;
     bool soundPlaying = false;
 

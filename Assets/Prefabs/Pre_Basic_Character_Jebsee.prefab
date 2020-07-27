@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5485039588387798169}
   - component: {fileID: 5679781285607527153}
   - component: {fileID: 7129979756045224983}
+  - component: {fileID: 1846743290}
   m_Layer: 0
   m_Name: Pre_Basic_Character_Jebsee
   m_TagString: Untagged
@@ -80,6 +81,8 @@ MonoBehaviour:
   RB2D: {fileID: 1154619890037021672}
   Anim: {fileID: 7129979756045224983}
   willFlip: 1
+  isActive: 0
+  currentCreature: 1
 --- !u!60 &5679781285607527153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -141,6 +144,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1846743290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138035082563453210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b183ad27173babc43b130c506b67db07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 25
+  dashDuration: 0.05
+  dashTimer: 0
+  isCharging: 0
 --- !u!1001 &4690989515266152623
 PrefabInstance:
   m_ObjectHideFlags: 0
