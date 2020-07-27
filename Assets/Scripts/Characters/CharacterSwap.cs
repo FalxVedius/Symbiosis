@@ -9,6 +9,8 @@ public class CharacterSwap : MonoBehaviour
     int index = 0;
     [SerializeField] KeyCode foward, back;
 
+    bool levelComplete;
+
     private void Start()
     {
         //Set all characters to false
@@ -21,18 +23,21 @@ public class CharacterSwap : MonoBehaviour
     }
     private void Update()
     {
-        // Looking for input
-        if (Input.GetKeyDown(foward))
+        if (!levelComplete)
         {
-            index++;
-            SwitchCharacter(index);
-            Debug.Log("Index = " + index);
-        }
+            // Looking for input
+            if (Input.GetKeyDown(foward))
+            {
+                index++;
+                SwitchCharacter(index);
+                Debug.Log("Index = " + index);
+            }
 
-        if (Input.GetKeyDown(back))
-        {
-            index--;
-            SwitchCharacter(index);
+            if (Input.GetKeyDown(back))
+            {
+                index--;
+                SwitchCharacter(index);
+            }
         }
     }
 
@@ -55,5 +60,15 @@ public class CharacterSwap : MonoBehaviour
         }
         //Set active character on
         allCharacters[index].SetIsActive(true);
+    }
+
+    public void DisableAllCharacters()
+    {
+        levelComplete = true;
+
+        for (int i = 0; i < allCharacters.Length; i++)
+        {
+            allCharacters[i].SetIsActive(false);
+        }
     }
 }

@@ -17,7 +17,7 @@ public class BasicCharacterControler : MonoBehaviour
     bool soundPlaying = false;
 
     public enum CurrentCharacter { Indi, Jebsee};
-    [SerializeField] CurrentCharacter currentCreature;
+    public CurrentCharacter currentCreature;
 
     // Update is called once per frame
     void Update()
@@ -166,5 +166,19 @@ public class BasicCharacterControler : MonoBehaviour
     public void SetIsActive(bool set)
     {
         isActive = set;
+
+        if(isActive == false)
+        {
+            if (isWalking && currentCreature == CurrentCharacter.Indi)
+            {
+                AudioManager.instance.StopSound("Indi_WalkCycle");
+            }
+
+            if (isWalking && currentCreature == CurrentCharacter.Jebsee)
+            {
+                AudioManager.instance.StopSound("Jebsee_WalkCycle");
+            }
+            isWalking = false;
+        }
     }
 }
