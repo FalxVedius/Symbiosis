@@ -157,7 +157,7 @@ public class BasicCharacterControler : MonoBehaviour
                 if (currentCreature == CurrentCharacter.Jebsee && !soundPlaying)
                 {
                     AudioManager.instance.PlaySound("Jebsee_Landing");
-                soundPlaying = true;
+                 soundPlaying = true;
                 }
 
             jumpCoolDown -= Time.deltaTime;

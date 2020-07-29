@@ -82,5 +82,26 @@ public class JebseeCharge : MonoBehaviour
                 }
             }  
         }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isCharging)
+        {
+            AudioManager.instance.PlaySound("Jebsee_ChargeImpact");
+            if (collision.gameObject.GetComponent<BreakableWalls>())
+            {
+                //Keep going
+            }
+            else
+            {
+                dashDirection = DashDirection.NoDirection;
+                dashTimer = 0;
+                body.velocity = Vector2.zero;
+                AudioManager.instance.StopSound("Jebsee_ChargeLoop");
+                isCharging = false;
+            }
+        }
     }
 }
