@@ -10,9 +10,9 @@ public class BasicCharacterControler : MonoBehaviour
     [SerializeField] Animator Anim;
     [SerializeField]bool willFlip = false;
 
-    bool facingRight = true;
+    public bool facingRight = true;
     bool isGrounded = true;
-    bool isActive = false;
+    public bool isActive = false;
     bool isWalking = false;
     bool soundPlaying = false;
 
