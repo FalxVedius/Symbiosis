@@ -165,7 +165,9 @@ MonoBehaviour:
   RB2D: {fileID: 2985281173138894406}
   Anim: {fileID: 0}
   willFlip: 0
+  facingRight: 1
   isActive: 0
+  currentCreature: 0
 --- !u!60 &5499603770650800531
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -230,6 +232,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf53947b8053b847b7ca21a871f13c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Activate: 323
+  Deactivate: 324
+  Up: 119
+  Down: 115
   ropeHingeAnchor: {fileID: 8078377904029984592}
   ropeJoint: {fileID: 8178789183482936960}
   crosshair: {fileID: 8440666923537633548}
@@ -239,6 +245,9 @@ MonoBehaviour:
   ropeLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  ropeHook: {x: 0, y: 0}
+  swingForce: 1000
+  climbSpeed: 3
 --- !u!120 &6103284824269557140
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -257,7 +266,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cb9d427b1373f9b448476cd849563303, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -283,19 +292,28 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.05
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.006439209
+        value: 0.41784096
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
