@@ -33,24 +33,25 @@ public class CharacterSwap : MonoBehaviour
 
         characterSwapInstance = this;
 
-        // Looking for input
-        if (Input.GetKeyDown(foward))
+        if (!levelComplete)
         {
-            // Looking for input
-            if (Input.GetKeyDown(foward))
-            {
-                index++;
-                SwitchCharacter(index);
-                Debug.Log("Index = " + index);
-            }
+            
+                // Looking for input
+                if (Input.GetKeyDown(foward))
+                {
+                    index++;
+                    SwitchCharacter(index);
+                    Debug.Log("Index = " + index);
+                }
 
-            if (Input.GetKeyDown(back))
-            {
-                index--;
-                SwitchCharacter(index);
-            }
+                if (Input.GetKeyDown(back))
+                {
+                    index--;
+                    SwitchCharacter(index);
+                }
+            
+
         }
-
     }
 
     public void SwitchCharacter(int indx)

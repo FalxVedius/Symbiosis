@@ -53,7 +53,7 @@ public class JebseeCharge : MonoBehaviour
                 else
                 {
                     
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if (Input.GetKeyDown(KeyCode.Space) && jebseeController.isWalking)
                     {
                         isCharging = true;
                         AudioManager.instance.PlaySound("Jebsee_ChargeLoop");

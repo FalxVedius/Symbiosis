@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Crate : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D body2D;
+    Rigidbody2D body2D;
 
     bool isSliding;
     bool isGrounded = true;
