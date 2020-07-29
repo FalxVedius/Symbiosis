@@ -12,17 +12,12 @@ public class BasicCharacterControler : MonoBehaviour
 
     public bool facingRight = true;
     bool isGrounded = true;
-<<<<<<< HEAD
     public bool isActive = false;
-    
-=======
-    bool isActive = false;
     bool isWalking = false;
     bool soundPlaying = false;
 
     public enum CurrentCharacter { Indi, Jebsee};
     [SerializeField] CurrentCharacter currentCreature;
->>>>>>> master
 
     // Update is called once per frame
     void Update()
