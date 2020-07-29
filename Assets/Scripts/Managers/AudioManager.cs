@@ -41,6 +41,22 @@ public class Sound
     {
         source.Play();
     }
+
+    //Stops the sound
+    public void Stop()
+    {
+        source.Stop();
+    }
+
+    public void Pause()
+    {
+        source.Pause();
+    }
+
+    public void Resume()
+    {
+        source.UnPause();
+    }
 }
 
 public class AudioManager : MonoBehaviour
@@ -50,8 +66,8 @@ public class AudioManager : MonoBehaviour
     public AudioMixer audioMixer;
 
     //private variables
-    float curMusicVol = 0.5f;
-    float curSFXVol = 0.5f;
+    float curMusicVol = 1.0f;
+    float curSFXVol = 1.0f;
 
     //Array that holds each individual sound
     [SerializeField]
@@ -69,6 +85,12 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            GameObject _go = new GameObject("Sound " + i + " " + sounds[i].clipName);
+            _go.transform.SetParent(this.transform);
+            sounds[i].SetSource(_go.AddComponent<AudioSource>());
+        }
         DontDestroyOnLoad(gameObject);
     }
 
@@ -77,12 +99,6 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
 
-        for (int i = 0; i < sounds.Length; i++)
-        {
-            GameObject _go = new GameObject("Sound " + i + " " + sounds[i].clipName);
-            _go.transform.SetParent(this.transform);
-            sounds[i].SetSource(_go.AddComponent<AudioSource>());
-        }
         DontDestroyOnLoad(gameObject);
 
     }
@@ -141,5 +157,41 @@ public class AudioManager : MonoBehaviour
             }
         }
 
+    }
+
+    public void StopSound(string _name)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if(sounds[i].clipName == _name)
+            {
+                sounds[i].Stop();
+                return;
+            }
+        }
+    }
+
+    public void PauseSound(string _name)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if(sounds[i].clipName == _name)
+            {
+                sounds[i].Pause();
+                return;
+            }
+        }
+    }
+
+    public void ResumeSound(string _name)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if (sounds[i].clipName == _name)
+            {
+                sounds[i].Resume();
+                return;
+            }
+        }
     }
 }
