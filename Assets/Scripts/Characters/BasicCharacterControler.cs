@@ -10,9 +10,9 @@ public class BasicCharacterControler : MonoBehaviour
     [SerializeField] Animator Anim;
     [SerializeField]bool willFlip = false;
 
-    bool facingRight = true;
+    public bool facingRight = true;
     bool isGrounded = true;
-    bool isActive = false;
+    public bool isActive = false;
     
 
     // Update is called once per frame
@@ -36,10 +36,13 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Left
                 RB2D.velocity = new Vector2(RB2D.velocity.x - speed, RB2D.velocity.y);
             }
-            if (facingRight == true && Anim != null && willFlip == true)
+            if (facingRight == true)
             {
                 facingRight = false;
-                Anim.SetBool("IsRight",facingRight);
+                if (Anim != null && willFlip == true)
+                {
+                    Anim.SetBool("IsRight", facingRight);
+                }
                 
             }
         }
@@ -53,10 +56,13 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Right
                 RB2D.velocity = new Vector2(RB2D.velocity.x + speed, RB2D.velocity.y);
             }
-            if (facingRight == false && Anim != null && willFlip == true)
+            if (facingRight == false)
             {
                 facingRight = true;
-                Anim.SetBool("IsRight", facingRight);
+                if (Anim != null && willFlip == true)
+                {
+                    Anim.SetBool("IsRight", facingRight);
+                }
             }
         }
 
