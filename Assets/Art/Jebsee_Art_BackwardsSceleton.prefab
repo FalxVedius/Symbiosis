@@ -590,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5359787703714863382}
   m_Layer: 0
-  m_Name: Jebsee_Art
+  m_Name: Jebsee_Art_BackwardsSceleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
