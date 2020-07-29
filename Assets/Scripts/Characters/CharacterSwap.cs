@@ -5,7 +5,6 @@ using UnityEngine;
 public class CharacterSwap : MonoBehaviour
 {
     public static CharacterSwap characterSwapInstance;
-    [SerializeField] Camera mainCamera;
     [SerializeField] BasicCharacterControler[] allCharacters;
     int index = 0;
     [SerializeField] KeyCode foward, back;
@@ -32,6 +31,9 @@ public class CharacterSwap : MonoBehaviour
 
         characterSwapInstance = this;
 
+        Camera.main.transform.position = Vector2.Lerp(Camera.main.transform.position, allCharacters[index].transform.position, 0.125f);
+        Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, -10);
+
         // Looking for input
         if (Input.GetKeyDown(foward))
         {
@@ -46,6 +48,7 @@ public class CharacterSwap : MonoBehaviour
             SwitchCharacter(index);
         }
 
+        
     }
 
     public void SwitchCharacter(int indx)
