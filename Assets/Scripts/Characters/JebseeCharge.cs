@@ -47,6 +47,7 @@ public class JebseeCharge : MonoBehaviour
                     dashDirection = DashDirection.NoDirection;
                     dashTimer = 0;
                     body.velocity = Vector2.zero;
+                    AudioManager.instance.StopSound("Jebsee_ChargeLoop");
                     isCharging = false;
                 }
                 else
@@ -55,32 +56,31 @@ public class JebseeCharge : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         isCharging = true;
+                        AudioManager.instance.PlaySound("Jebsee_ChargeLoop");
                     }
 
                     if (isCharging)
                     {
                         dashTimer += Time.deltaTime;
-                        Charge();
+
+                        if (dashDirection == DashDirection.Left)
+                        {
+                            body.velocity = Vector2.left * dashSpeed;
+                        }
+
+                        if (dashDirection == DashDirection.Right)
+                        {
+                            body.velocity = Vector2.right * dashSpeed;
+                        }
+
+                        if (jebseeController.isWalking)
+                        {
+                            AudioManager.instance.StopSound("Jebsee_WalkCycle");
+                        }
+
                     }
                 }
-            }
-
-            
+            }  
         }
-    }
-
-    public void Charge()
-    {
-        if (dashDirection == DashDirection.Left)
-        {
-            body.velocity = Vector2.left * dashSpeed;
-        }
-
-        if (dashDirection == DashDirection.Right)
-        {
-            body.velocity = Vector2.right * dashSpeed;
-        }
-
-        
     }
 }

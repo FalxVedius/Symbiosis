@@ -13,7 +13,7 @@ public class BasicCharacterControler : MonoBehaviour
     bool facingRight = true;
     bool isGrounded = true;
    public bool isActive = false;
-    bool isWalking = false;
+   public bool isWalking = false;
     bool soundPlaying = false;
 
     public enum CurrentCharacter { Indi, Jebsee};
