@@ -10,9 +10,9 @@ public class BasicCharacterControler : MonoBehaviour
     [SerializeField] Animator Anim;
     [SerializeField]bool willFlip = false;
 
-    bool facingRight = true;
+    public bool facingRight = true;
     bool isGrounded = true;
-    bool isActive = false;
+    public bool isActive = false;
     bool isWalking = false;
     bool soundPlaying = false;
 
@@ -52,10 +52,13 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Left
                 RB2D.velocity = new Vector2(RB2D.velocity.x - speed, RB2D.velocity.y);
             }
-            if (facingRight == true && Anim != null && willFlip == true)
+            if (facingRight == true)
             {
                 facingRight = false;
-                Anim.SetBool("IsRight",facingRight);
+                if (Anim != null && willFlip == true)
+                {
+                    Anim.SetBool("IsRight", facingRight);
+                }
                 
             }
         }
@@ -81,10 +84,13 @@ public class BasicCharacterControler : MonoBehaviour
                 //Add force Right
                 RB2D.velocity = new Vector2(RB2D.velocity.x + speed, RB2D.velocity.y);
             }
-            if (facingRight == false && Anim != null && willFlip == true)
+            if (facingRight == false)
             {
                 facingRight = true;
-                Anim.SetBool("IsRight", facingRight);
+                if (Anim != null && willFlip == true)
+                {
+                    Anim.SetBool("IsRight", facingRight);
+                }
             }
         }
 
@@ -94,15 +100,16 @@ public class BasicCharacterControler : MonoBehaviour
             RB2D.velocity = new Vector2(RB2D.velocity.x / stopForce, RB2D.velocity.y);
 
             //Stop playing respective creatures walking sound
-            if (isActive && isWalking && currentCreature == CurrentCharacter.Indi)
+            if (isWalking && currentCreature == CurrentCharacter.Indi)
             {
                 AudioManager.instance.StopSound("Indi_WalkCycle");
             }
 
-            if (isActive && isWalking && currentCreature == CurrentCharacter.Jebsee)
+            if (isWalking && currentCreature == CurrentCharacter.Jebsee)
             {
                 AudioManager.instance.StopSound("Jebsee_WalkCycle");
             }
+
             isWalking = false;
         }
     }
@@ -141,13 +148,13 @@ public class BasicCharacterControler : MonoBehaviour
         if (isGrounded == false && RB2D.velocity.y <= 0.0005 && RB2D.velocity.y >= -0.0005)
         {
                 //Stop playing respective creatures walking sound
-                if (isActive && currentCreature == CurrentCharacter.Indi && !soundPlaying)
+                if (currentCreature == CurrentCharacter.Indi && !soundPlaying)
                 {
                     AudioManager.instance.PlaySound("Indi_Land");
                  soundPlaying = true;
                 }
 
-                if (isActive && currentCreature == CurrentCharacter.Jebsee && !soundPlaying)
+                if (currentCreature == CurrentCharacter.Jebsee && !soundPlaying)
                 {
                     AudioManager.instance.PlaySound("Jebsee_Landing");
                 soundPlaying = true;
@@ -166,5 +173,22 @@ public class BasicCharacterControler : MonoBehaviour
     public void SetIsActive(bool set)
     {
         isActive = set;
+
+        //If the player was walking before switching, stop the walk cycle audio
+        if(!isActive && isWalking)
+        {
+            //Stop playing respective creatures walking sound
+            if (isWalking && currentCreature == CurrentCharacter.Indi)
+            {
+                AudioManager.instance.StopSound("Indi_WalkCycle");
+            }
+
+            if (isWalking && currentCreature == CurrentCharacter.Jebsee)
+            {
+                AudioManager.instance.StopSound("Jebsee_WalkCycle");
+            }
+
+            isWalking = false;
+        }
     }
 }
