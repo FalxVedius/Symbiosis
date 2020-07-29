@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CharacterSwap : MonoBehaviour
 {
+    public static CharacterSwap characterSwapInstance;
     [SerializeField] Camera mainCamera;
     [SerializeField] BasicCharacterControler[] allCharacters;
     int index = 0;
     [SerializeField] KeyCode foward, back;
 
-    private void Start()
+    private void Awake()
     {
+        allCharacters = BasicCharacterControler.FindObjectsOfType<BasicCharacterControler>();
         //Set all characters to false
         for (int i = 0; i < allCharacters.Length; i++)
         {
@@ -21,6 +23,15 @@ public class CharacterSwap : MonoBehaviour
     }
     private void Update()
     {
+        if (characterSwapInstance != null && characterSwapInstance != this)
+        {
+            //Deletes the Script if another instance of the Character Swap already exist
+            Destroy(this);
+            return;
+        }
+
+        characterSwapInstance = this;
+
         // Looking for input
         if (Input.GetKeyDown(foward))
         {
@@ -34,6 +45,7 @@ public class CharacterSwap : MonoBehaviour
             index--;
             SwitchCharacter(index);
         }
+
     }
 
     public void SwitchCharacter(int indx)
