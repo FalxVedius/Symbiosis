@@ -36,6 +36,8 @@ public class GrappleHookAbility : MonoBehaviour
 
     private Dictionary<Vector2, int> wrapPointsLookup = new Dictionary<Vector2, int>();
 
+    private GameObject attachedObject;
+
     void Awake()
     {
         // The Awake method will run when the game starts and disables the ropeJoint (DistanceJoint2D component). It'll also set playerPosition to the current position of the Player.
@@ -87,6 +89,18 @@ public class GrappleHookAbility : MonoBehaviour
                 }
             }
 
+            //If connected to switch, activate when pulling down
+            if (attachedObject != null)
+            {
+                if (attachedObject.GetComponent<LeverSwitch>())
+                {
+                    if (Input.GetKeyDown(Down))
+                    {
+                        attachedObject.GetComponent<LeverSwitch>().ActivateLever();
+                    }
+                }
+            }
+
             HandleInput(aimDirection);
             UpdateRopePositions();
             HandleRopeLength();
@@ -119,6 +133,7 @@ public class GrappleHookAbility : MonoBehaviour
             var No_No = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, stopLayerMask );
             if (No_No.collider != null)
             {
+                Debug.Log(No_No.collider.gameObject.name);
                 Debug.Log("NO NO NO *Waggs finger*");
                 return;
             }
@@ -140,7 +155,7 @@ public class GrappleHookAbility : MonoBehaviour
                     ropeJoint.enabled = true;
                     ropeHook = hit.point;
                     ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
-                    
+                    attachedObject = hit.collider.gameObject;
                     //ropeHingeAnchorSprite.enabled = true;
                 }
             }
@@ -199,7 +214,7 @@ public class GrappleHookAbility : MonoBehaviour
         ropeRenderer.SetPosition(0, transform.position);
         ropeRenderer.SetPosition(1, transform.position);
         wrapPointsLookup.Clear();
-
+        attachedObject = null;
 
         //Launch the player on breaking the rope
 
