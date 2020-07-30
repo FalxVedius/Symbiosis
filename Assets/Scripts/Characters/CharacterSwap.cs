@@ -6,6 +6,9 @@ public class CharacterSwap : MonoBehaviour
 {
     public static CharacterSwap characterSwapInstance;
     [SerializeField] BasicCharacterControler[] allCharacters;
+
+    public BasicCharacterControler selectedCharacter;
+
     int index = 0;
     [SerializeField] KeyCode foward, back;
 
@@ -20,6 +23,7 @@ public class CharacterSwap : MonoBehaviour
         }
         //Set active character on
         allCharacters[0].SetIsActive(true);
+        selectedCharacter = allCharacters[index];
     }
     private void Update()
     {
@@ -77,6 +81,8 @@ public class CharacterSwap : MonoBehaviour
         }
         //Set active character on
         allCharacters[index].SetIsActive(true);
+
+        selectedCharacter = allCharacters[index];
     }
 
     public void DisableAllCharacters()

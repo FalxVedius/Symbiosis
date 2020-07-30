@@ -2499,6 +2499,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5808857572016135244, guid: 7e91e64f56e642a4aaf698f5805e74d3,
+        type: 3}
+      propertyPath: characterManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808857572016135244, guid: 7e91e64f56e642a4aaf698f5805e74d3,
+        type: 3}
+      propertyPath: levelNum
+      value: Metric
+      objectReference: {fileID: 0}
     - target: {fileID: 6563707229723524190, guid: 7e91e64f56e642a4aaf698f5805e74d3,
         type: 3}
       propertyPath: m_Layer
