@@ -9,6 +9,7 @@ public class CharacterSwap : MonoBehaviour
     int index = 0;
     [SerializeField] KeyCode foward, back;
 
+    bool levelComplete;
     private void Awake()
     {
         allCharacters = BasicCharacterControler.FindObjectsOfType<BasicCharacterControler>();
@@ -34,21 +35,27 @@ public class CharacterSwap : MonoBehaviour
         Camera.main.transform.position = Vector2.Lerp(Camera.main.transform.position, allCharacters[index].transform.position, 0.125f);
         Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, -10);
 
-        // Looking for input
-        if (Input.GetKeyDown(foward))
+        if (!levelComplete)
         {
-            index++;
-            SwitchCharacter(index);
-            Debug.Log("Index = " + index);
-        }
 
-        if (Input.GetKeyDown(back))
-        {
-            index--;
-            SwitchCharacter(index);
-        }
+                // Looking for input
+                if (Input.GetKeyDown(foward))
+                {
+                    index++;
+                    SwitchCharacter(index);
+                    Debug.Log("Index = " + index);
+                }
 
-        
+                if (Input.GetKeyDown(back))
+                {
+                    index--;
+                    SwitchCharacter(index);
+                }
+
+
+            
+
+        }
     }
 
     public void SwitchCharacter(int indx)
@@ -70,5 +77,15 @@ public class CharacterSwap : MonoBehaviour
         }
         //Set active character on
         allCharacters[index].SetIsActive(true);
+    }
+
+    public void DisableAllCharacters()
+    {
+        levelComplete = true;
+
+        for (int i = 0; i < allCharacters.Length; i++)
+        {
+            allCharacters[i].SetIsActive(false);
+        }
     }
 }

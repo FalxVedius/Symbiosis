@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5485039588387798169}
   - component: {fileID: 5679781285607527153}
   - component: {fileID: 7129979756045224983}
+  - component: {fileID: 8388405722628923626}
   m_Layer: 0
   m_Name: Pre_Basic_Character_Jebsee
   m_TagString: Untagged
@@ -80,7 +81,10 @@ MonoBehaviour:
   RB2D: {fileID: 1154619890037021672}
   Anim: {fileID: 7129979756045224983}
   willFlip: 1
-  currentCreature: 0
+  facingRight: 1
+  isActive: 0
+  isWalking: 0
+  currentCreature: 1
 --- !u!60 &5679781285607527153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -94,7 +98,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.37}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -142,6 +146,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8388405722628923626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138035082563453210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b183ad27173babc43b130c506b67db07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 10
+  dashDuration: 1
+  dashTimer: 0
+  isCharging: 0
 --- !u!1 &3967065360074388312
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicCharacterControler : MonoBehaviour
 {
-    [SerializeField] KeyCode left, right, jump;
+    public KeyCode left, right, jump;
     [SerializeField] float speed, maxSpeed, jumpForce, jumpCoolDown, jumpCoolDownConstant, stopForce;
     [SerializeField] Rigidbody2D RB2D;
     [SerializeField] Animator Anim;
@@ -13,11 +13,11 @@ public class BasicCharacterControler : MonoBehaviour
     public bool facingRight = true;
     bool isGrounded = true;
     public bool isActive = false;
-    bool isWalking = false;
+   public bool isWalking = false;
     bool soundPlaying = false;
 
     public enum CurrentCharacter { Indi, Jebsee};
-    [SerializeField] CurrentCharacter currentCreature;
+    public CurrentCharacter currentCreature;
 
     // Update is called once per frame
     void Update()
@@ -157,7 +157,7 @@ public class BasicCharacterControler : MonoBehaviour
                 if (currentCreature == CurrentCharacter.Jebsee && !soundPlaying)
                 {
                     AudioManager.instance.PlaySound("Jebsee_Landing");
-                soundPlaying = true;
+                 soundPlaying = true;
                 }
 
             jumpCoolDown -= Time.deltaTime;
@@ -174,10 +174,8 @@ public class BasicCharacterControler : MonoBehaviour
     {
         isActive = set;
 
-        //If the player was walking before switching, stop the walk cycle audio
-        if(!isActive && isWalking)
+        if(isActive == false)
         {
-            //Stop playing respective creatures walking sound
             if (isWalking && currentCreature == CurrentCharacter.Indi)
             {
                 AudioManager.instance.StopSound("Indi_WalkCycle");
@@ -187,7 +185,6 @@ public class BasicCharacterControler : MonoBehaviour
             {
                 AudioManager.instance.StopSound("Jebsee_WalkCycle");
             }
-
             isWalking = false;
         }
     }
