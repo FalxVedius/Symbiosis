@@ -664,12 +664,12 @@ PrefabInstance:
     - target: {fileID: 2040821045896276921, guid: 20ea938e357c97d4bb585d9545dcfb95,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.43
+      value: -4.73
       objectReference: {fileID: 0}
     - target: {fileID: 2040821045896276921, guid: 20ea938e357c97d4bb585d9545dcfb95,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.66
+      value: -2.45
       objectReference: {fileID: 0}
     - target: {fileID: 2040821045896276921, guid: 20ea938e357c97d4bb585d9545dcfb95,
         type: 3}
@@ -1485,7 +1485,7 @@ PrefabInstance:
     - target: {fileID: 2682353348326383127, guid: 8b7c66c233f12694788843664ef98365,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.139
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 2682353348326383127, guid: 8b7c66c233f12694788843664ef98365,
         type: 3}
@@ -1792,7 +1792,7 @@ PrefabInstance:
     - target: {fileID: 6602762184110058721, guid: 2b8f528a29a1a9041965da37b567ac99,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.384
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 6602762184110058721, guid: 2b8f528a29a1a9041965da37b567ac99,
         type: 3}
@@ -1907,6 +1907,7 @@ GameObject:
   - component: {fileID: 7849817460623424608}
   - component: {fileID: 5991868349999623323}
   - component: {fileID: 6695595299529773207}
+  - component: {fileID: 5044763495332864878}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -1914,6 +1915,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &5044763495332864878
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5044763495332864877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e69d8c6f092a7f64aa1aa1ee00d943a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &5991868349999623323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2068,7 +2088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5044763495332864877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.224, y: -1.799, z: -0.166}
+  m_LocalPosition: {x: 4.26, y: -1.799, z: -0.166}
   m_LocalScale: {x: 0.111487, y: 0.06812814, z: 1}
   m_Children:
   - {fileID: 212654460}
