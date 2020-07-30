@@ -19,7 +19,11 @@ public class GrappleHookAbility : MonoBehaviour
     private SpriteRenderer ropeHingeAnchorSprite;
 
     public LineRenderer ropeRenderer;
+
     public LayerMask ropeLayerMask;
+
+    public LayerMask stopLayerMask;
+
     private float ropeMaxCastDistance = 20f;
     private List<Vector2> ropePositions = new List<Vector2>();
     private bool distanceSet;
@@ -111,6 +115,13 @@ public class GrappleHookAbility : MonoBehaviour
         {
             // When a left mouse click is registered, the rope line renderer is enabled and a 2D raycast is fired out from the player position in the aiming direction. A maximum distance is specified so that the grappling hook can't be fired in infinite distance, and a custom mask is applied so that you can specify which physics layers the raycast is able to hit.
             if (ropeAttached) return;
+            
+            var No_No = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, stopLayerMask );
+            if (No_No.collider != null)
+            {
+                Debug.Log("NO NO NO *Waggs finger*");
+                return;
+            }
             ropeRenderer.enabled = true;
 
             var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);

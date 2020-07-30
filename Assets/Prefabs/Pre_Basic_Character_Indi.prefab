@@ -245,6 +245,9 @@ MonoBehaviour:
   ropeLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  stopLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
   ropeHook: {x: 0, y: 0}
   swingForce: 1000
   climbSpeed: 3
