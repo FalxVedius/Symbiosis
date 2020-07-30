@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8178789183482936960}
   - component: {fileID: 4177835080523907908}
   - component: {fileID: 6103284824269557140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pre_Basic_Character_Indi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,6 +167,7 @@ MonoBehaviour:
   willFlip: 0
   facingRight: 1
   isActive: 0
+  isWalking: 0
   currentCreature: 0
 --- !u!60 &5499603770650800531
 PolygonCollider2D:

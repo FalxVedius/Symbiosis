@@ -28,7 +28,7 @@ public class JebseeCharge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (jebseeController.isActive)
+        if (jebseeController.isActive && !isCharging)
         {
             if (Input.GetKey(jebseeController.left))
             {

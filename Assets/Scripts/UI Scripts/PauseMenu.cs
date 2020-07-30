@@ -51,6 +51,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadScene(string scene)
     {
         AudioManager.instance.StopSound("Music_PauseMenu");
+        AudioManager.instance.StopSound("Obj_Exit");
         SceneManager.LoadScene(scene);
     }
 
