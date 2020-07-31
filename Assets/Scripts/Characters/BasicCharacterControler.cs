@@ -51,6 +51,7 @@ public class BasicCharacterControler : MonoBehaviour
             {
                 //Add force Left
                 RB2D.velocity = new Vector2(RB2D.velocity.x - speed, RB2D.velocity.y);
+                Anim.SetTrigger("Run");
             }
             if (facingRight == true)
             {
@@ -83,6 +84,7 @@ public class BasicCharacterControler : MonoBehaviour
             {
                 //Add force Right
                 RB2D.velocity = new Vector2(RB2D.velocity.x + speed, RB2D.velocity.y);
+                Anim.SetTrigger("Run");
             }
             if (facingRight == false)
             {
