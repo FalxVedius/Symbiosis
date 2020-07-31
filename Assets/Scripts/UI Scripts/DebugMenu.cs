@@ -52,6 +52,7 @@ public class DebugMenu : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        AudioManager.instance.StopSound("Obj_Exit");
         Debug.Log("Loading Next Level");
     }
 

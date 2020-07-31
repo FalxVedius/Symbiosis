@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MetricLevel.unity
     guid: 4a96a6c29013ade40a376ebe82571a9f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 6cf84ee29d245af4bbb23977769e918d
   m_configObjects: {}
