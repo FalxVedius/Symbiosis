@@ -1060,7 +1060,7 @@ PrefabInstance:
     - target: {fileID: 4301138252361900100, guid: f79512d8a69f86746bed394f87e8ebf7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4242144
+      value: -2.487
       objectReference: {fileID: 0}
     - target: {fileID: 4301138252361900100, guid: f79512d8a69f86746bed394f87e8ebf7,
         type: 3}
@@ -1491,7 +1491,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.75
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1965,7 +1965,7 @@ PrefabInstance:
     - target: {fileID: 8395154383195524143, guid: 0e40c20bda5216c49bc030e6d639058b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 8395154383195524143, guid: 0e40c20bda5216c49bc030e6d639058b,
         type: 3}
@@ -2149,11 +2149,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 2DCrate
-      objectReference: {fileID: 0}
-    - target: {fileID: 7062729907997114235, guid: d22800c366215b14d9ba14a30b73d4f1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d22800c366215b14d9ba14a30b73d4f1, type: 3}
@@ -2715,7 +2710,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.78, y: 33.45}
   m_EdgeRadius: 0
 --- !u!212 &6430237885173781823
 SpriteRenderer:
@@ -2833,6 +2828,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841940398514735838, guid: 398daa56c4c94ed4d906802cdfb67c29,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841940398514735838, guid: 398daa56c4c94ed4d906802cdfb67c29,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 27.45
       objectReference: {fileID: 0}
     - target: {fileID: 6841940398514735839, guid: 398daa56c4c94ed4d906802cdfb67c29,
         type: 3}
