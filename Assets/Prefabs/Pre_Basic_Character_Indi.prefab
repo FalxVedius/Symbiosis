@@ -163,7 +163,7 @@ MonoBehaviour:
   jumpCoolDownConstant: 0.1
   stopForce: 2
   RB2D: {fileID: 2985281173138894406}
-  Anim: {fileID: 0}
+  Anim: {fileID: 4416821515528934916}
   willFlip: 0
   facingRight: 1
   isActive: 0
@@ -522,6 +522,12 @@ PrefabInstance:
 --- !u!4 &5907741906327974982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2994590492658652109, guid: 7f9307ded16c1d5458c0541ba9d04a2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8679122411673642891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4416821515528934916 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4988260080082743695, guid: 7f9307ded16c1d5458c0541ba9d04a2f,
     type: 3}
   m_PrefabInstance: {fileID: 8679122411673642891}
   m_PrefabAsset: {fileID: 0}
