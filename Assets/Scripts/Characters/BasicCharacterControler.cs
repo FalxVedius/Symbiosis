@@ -84,7 +84,7 @@ public class BasicCharacterControler : MonoBehaviour
             {
                 //Add force Right
                 RB2D.velocity = new Vector2(RB2D.velocity.x + speed, RB2D.velocity.y);
-                Anim.SetTrigger("Run");
+                Anim.SetBool("Run", true);
             }
             if (facingRight == false)
             {
@@ -111,7 +111,7 @@ public class BasicCharacterControler : MonoBehaviour
             {
                 AudioManager.instance.StopSound("Jebsee_WalkCycle");
             }
-
+            Anim.SetBool("Run", false);
             isWalking = false;
         }
     }
@@ -124,6 +124,8 @@ public class BasicCharacterControler : MonoBehaviour
             RB2D.velocity = new Vector2(RB2D.velocity.x, RB2D.velocity.y + jumpForce);
             jumpCoolDown = jumpCoolDownConstant;
             isGrounded = false;
+
+            Anim.SetBool("Jump", true);
 
             //Plays respective creatures jump sound
             if (isActive && currentCreature == CurrentCharacter.Indi)
@@ -168,6 +170,7 @@ public class BasicCharacterControler : MonoBehaviour
                 soundPlaying = false;
                 isGrounded = true;
                 isWalking = false;
+                Anim.SetBool("Jump", false);
             }
         }
     }

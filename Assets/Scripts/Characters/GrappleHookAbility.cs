@@ -156,6 +156,8 @@ public class GrappleHookAbility : MonoBehaviour
                     ropeHook = hit.point;
                     ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
                     attachedObject = hit.collider.gameObject;
+
+                    AudioManager.instance.PlaySound("Indi_HookFire");
                     //ropeHingeAnchorSprite.enabled = true;
                 }
             }
@@ -207,6 +209,7 @@ public class GrappleHookAbility : MonoBehaviour
         }
             
 
+        AudioManager.instance.PlaySound("Indi_HookDetatch");
         ropeJoint.enabled = false;
         ropeAttached = false;
         //playerMovement.isSwinging = false;

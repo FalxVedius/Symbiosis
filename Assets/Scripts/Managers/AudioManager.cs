@@ -67,8 +67,8 @@ public class AudioManager : MonoBehaviour
     public AudioMixer audioMixer;
 
     //private variables
-    float curMusicVol = 1.0f;
-    float curSFXVol = 1.0f;
+    float curMusicVol = 0.5f;
+    float curSFXVol = 0.5f;
 
     //Array that holds each individual sound
     [SerializeField]
