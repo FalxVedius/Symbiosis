@@ -13,6 +13,7 @@ public class BigButton : MonoBehaviour
     {
         onHeld.Invoke();
         Debug.Log("Bonk");
+        AudioManager.instance.PlaySound("Obj_LeverActivate");
     }
 
     private void OnTriggerExit2D(Collider2D collision)

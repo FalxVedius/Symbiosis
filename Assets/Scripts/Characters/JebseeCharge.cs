@@ -90,7 +90,7 @@ public class JebseeCharge : MonoBehaviour
         if (isCharging)
         {
             AudioManager.instance.PlaySound("Jebsee_ChargeImpact");
-            if (collision.gameObject.GetComponent<BreakableWalls>())
+            /*if (collision.gameObject.GetComponent<BreakableWalls>())
             {
                 //Keep going
             }
@@ -101,7 +101,13 @@ public class JebseeCharge : MonoBehaviour
                 body.velocity = Vector2.zero;
                 AudioManager.instance.StopSound("Jebsee_ChargeLoop");
                 isCharging = false;
-            }
+            }*/
+
+            dashDirection = DashDirection.NoDirection;
+            dashTimer = 0;
+            body.velocity = Vector2.zero;
+            AudioManager.instance.StopSound("Jebsee_ChargeLoop");
+            isCharging = false;
         }
     }
 }

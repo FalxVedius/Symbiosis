@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
+    [SerializeField] GameObject finishMenu;
     [SerializeField] GameObject winMenu;
     [SerializeField] CharacterSwap characterManager;
     public string levelNum;
     public Text characterText;
     [SerializeField] Text levelNumText;
+    [SerializeField] bool lastLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,14 @@ public class PlayerUI : MonoBehaviour
 
     public void LevelComplete()
     {
-        winMenu.SetActive(true);
+        if (!lastLevel)
+        {
+            finishMenu.SetActive(true);
+        }
+        else
+        {
+            winMenu.SetActive(true);
+        }
 
         characterManager.DisableAllCharacters();
     }
