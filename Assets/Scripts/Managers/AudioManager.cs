@@ -19,6 +19,9 @@ public class Sound
     [Range(0.0f, 2.0f)]
     public float pitch;
 
+    [Range(0, 256)]
+    public int priority;
+
     public bool loop = false;
     public bool playOnAwake = false;
 
@@ -32,6 +35,7 @@ public class Sound
         source.clip = clip;
         source.pitch = pitch;
         source.volume = volume;
+        source.priority = priority;
         source.playOnAwake = playOnAwake;
         source.loop = loop;
         source.outputAudioMixerGroup = audioMixerGroup;
